@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/RabbitMQNotificationService2/obj
+/RabbitMQNotificationService2/bin/Debug/netcoreapp3.1
+/ProductService/bin/Debug/netcoreapp3.1
+/ProductService/obj
+/RabbitMQNotificationService1/bin/Debug/netcoreapp3.1
+/RabbitMQNotificationService1/obj
+/gRPCOrderService/obj
+/gRPCOrderService/bin/Debug/netcoreapp3.1/Properties
+/.vs

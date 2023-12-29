@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\gRPCOrderService\gRPCOrderService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\gRPCOrderService\Protos\orderservice.proto" GrpcServices="Client">
+      <Link>Protos\orderservice.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+
+
+</Project>

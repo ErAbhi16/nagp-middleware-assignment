@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCOrderService";
+
+package order_service;
+
+// The greeting service definition.
+service Order_Service {
+  // Sends a greeting
+  rpc PlaceOrder (OrderCreateRequest) returns (OrderResponse);
+  rpc UpdateOrder (OrderUpdateRequest) returns (OrderResponse);
+}
+
+// The request message containing the user's name.
+message OrderCreateRequest {
+  string cartId = 1;
+  int32 productId = 2;
+  int32 quantity = 3;
+}
+
+message OrderUpdateRequest {
+  string orderId = 1;
+  int32 productId = 2;
+  int32 quantity = 3;
+}
+
+// The response message containing the greetings.
+message OrderResponse {
+  string message = 1;
+  string orderId = 2;
+}

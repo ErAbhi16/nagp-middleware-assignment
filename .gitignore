@@ -11,3 +11,4 @@
 /gRPCOrderService/obj
 /gRPCOrderService/bin/Debug/netcoreapp3.1/Properties
 /.vs
+/gRPCOrderService/bin/Debug/netcoreapp3.1
